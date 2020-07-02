@@ -740,7 +740,7 @@ async def kek(keks):
     uio = ["/", "\\"]
     for i in range(1, 15):
         time.sleep(0.3)
-        await keks.edit(":" + uio[i % 2])
+        await keks.edit("=" + uio[i % 2])
 
 
 @register(outgoing=True, pattern=r"^.coinflip (.*)")
