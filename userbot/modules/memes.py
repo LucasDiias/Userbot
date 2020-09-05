@@ -1084,7 +1084,7 @@ async def clock(event):
 
 @register(outgoing=True, pattern="^.heart$")
 async def clock(event):
-    deq = deque(list("❤️🧡💛💚💙💜🖤"))
+    deq = deque(list("❤️🧡💛💚💙💜"))
     try:
         for x in range(32):
             await sleep(0.1)
