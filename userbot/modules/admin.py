@@ -130,7 +130,7 @@ async def promote(promt):
     user, rank = await get_user_from_event(promt)
     if not rank:
         # Just in case.
-        rank = "admeme"
+        rank = "admin"
     if user:
         pass
     else:
@@ -170,7 +170,7 @@ async def demote(dmod):
 
     # If passing, declare that we're going to demote
     await dmod.edit("`Demoting...`")
-    rank = "admeme"  # dummy rank, lol.
+    rank = "admin"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
     if user:
@@ -344,9 +344,9 @@ async def spider(spdr):
 
             # Announce that the function is done
             if reason:
-                await spdr.edit(f"`Safely taped !!`\nReason: {reason}")
+                await spdr.edit(f"`Safely taped!!`\nReason: {reason}")
             else:
-                await spdr.edit("`Haha! Safely taped !!`")
+                await spdr.edit("`Haha! Safely taped!!`")
 
             # Announce to logging group
             if BOTLOG:
