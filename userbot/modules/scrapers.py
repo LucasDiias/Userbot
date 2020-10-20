@@ -11,7 +11,6 @@ import asyncio
 import shutil
 from bs4 import BeautifulSoup
 import re
-import wikipedia
 from time import sleep
 from html import unescape
 from re import findall
@@ -215,7 +214,6 @@ async def gsearch(q_event):
 
 @register(outgoing=True, pattern=r"^.wiki (.*)")
 async def wiki(wiki_q):
-    wikipedia.set_lang("pt-br")
     """ For .wiki command, fetch content from Wikipedia. """
     match = wiki_q.pattern_match.group(1)
     try:
