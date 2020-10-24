@@ -4,6 +4,7 @@
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot import bot
 
 
 @bot.on(admin_cmd(pattern="tagall$"))
