@@ -11,6 +11,7 @@ import time
 import traceback
 from pathlib import Path
 from time import gmtime, strftime
+from .Config import Config
 
 from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
