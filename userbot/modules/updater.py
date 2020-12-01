@@ -7,10 +7,11 @@
 This module updates the userbot based on Upstream revision
 """
 
-from os import remove, execle, path, makedirs, getenv, os
+from os import remove, execle, path, makedirs, getenv
 from shutil import rmtree
 import asyncio
 import sys
+import os
 
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
